@@ -57,9 +57,9 @@ You can pass some options to the plugin like this :
 </script>
 ```
 
-minMargin: 30 /* minimum margins around the element (this is a *minimum* margin because it can be more on top/bottom OR left/right due to preservation of the original ratio). Default value is 0 */
+minMargin: 30 // minimum margins around the element (this is a *minimum* margin because it can be more on top/bottom OR left/right due to preservation of the original ratio). Default value is 0
 
-coeff: 0.9, /* by default the element will occupy the max it can (minus the margins), with respect to it's original ratio. But it you prefer it to be only, let's say 90%, just set the coeff to 0.9. The value should be between 0 and 1. Default is 1. */
+coeff: 0.9, // by default the element will occupy the max it can (minus the margins), with respect to it's original ratio. But it you prefer it to be only, let's say 90%, just set the coeff to 0.9. The value should be between 0 and 1. Default is 1.
 
 ## Licensing
 
