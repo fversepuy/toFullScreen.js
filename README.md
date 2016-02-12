@@ -12,29 +12,29 @@ Features :
 
 ## Examples :
 
-[Example 1](http://codepen.io/FrancoisV/pen/vLvQYV) : a youtube iframe (original size 560x315, i.e. 16/9 ratio)
-[Example 2](http://codepen.io/FrancoisV/pen/JGweyZ) : a youtube iframe (original size 420x315, i.e. 4/3 ratio)
-[Example 3](http://codepen.io/FrancoisV/pen/YwdKZe) : an image (original size 1000x1000)
-[Example 4](http://codepen.io/FrancoisV/pen/LGMgLy) : an image (original size 300x900). toFullScreen minMargin option set to 100
-[Example 5](http://codepen.io/FrancoisV/pen/qbLJLP) : an image (original size 1300x200). toFullScreen coeff option set to 0.8
+[Example 1](http://codepen.io/FrancoisV/pen/vLvQYV) : a youtube iframe (original size 560x315, i.e. 16/9 ratio)  
+[Example 2](http://codepen.io/FrancoisV/pen/JGweyZ) : a youtube iframe (original size 420x315, i.e. 4/3 ratio)  
+[Example 3](http://codepen.io/FrancoisV/pen/YwdKZe) : an image (original size 1000x1000)  
+[Example 4](http://codepen.io/FrancoisV/pen/LGMgLy) : an image (original size 300x900). toFullScreen minMargin option set to 100  
+[Example 5](http://codepen.io/FrancoisV/pen/qbLJLP) : an image (original size 1300x200). toFullScreen coeff option set to 0.8  
 [Example 6](http://codepen.io/FrancoisV/pen/OMrazP) : open a video popin (original size 560x315, i.e. 16/9 ratio). toFullScreen minMargin option set to 30
 
 ## Usage :
 
-Be sure to have included jQuery on your page.
+1) Be sure to have included jQuery on your page.
 
-Then include the script, after jQuery :
+2) Then include the script, after jQuery :
 ```html
 <script src="js/toFullScreen.js"></script>
 ```
 
-Include in your body an element you want to render fullSize
+3) Include in your body an element you want to render fullSize :
 ```html
 <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/IyTv_SR2uUo" frameborder="0" allowfullscreen></iframe>
 ```
 Be sure to let the indication of it's original size in the html or in the css (here width="560" height="315"). The script need it to calculate the original element ratio.
 
-Target the element and init the plugin
+4) Target the element and init the plugin :
 ```javascript
 <script>
   $(function() {
@@ -63,10 +63,10 @@ coeff: 0.9, // by default the element will occupy the max it can (minus the marg
 
 ## Licensing
 
-Copyright © 2016 Francois Versepuy
+Copyright © 2016 Francois Versepuy  
 Follow [Francois Versepuy](https://twitter.com/fanfan92) on Twitter
 
-Special thanks to Ariel Dorol for his opinions and contributions on this.
+Special thanks to Ariel Dorol for his opinions and contributions on this.  
 Follow [Ariel Dorol](https://twitter.com/darkylmnx) on Twitter
 
 Under MIT LICENSE
