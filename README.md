@@ -32,7 +32,7 @@ Features :
 ```html
 <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/IyTv_SR2uUo" frameborder="0" allowfullscreen></iframe>
 ```
-Be sure to let the indication of it's original size in the html or in the css (here width="560" height="315"). The script need it to calculate the original element ratio.
+Be sure to let in your code the element's original sizes, should it be in the html or in the css (e.g. here : width="560" height="315"). The script needs it to calculate the original element's ratio.
 
 4) Target the element and init the plugin :
 ```javascript
