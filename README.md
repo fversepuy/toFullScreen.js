@@ -61,6 +61,16 @@ minMargin: 30 // minimum margins around the element (this is a *minimum* margin 
 
 coeff: 0.9, // by default the element will occupy the max it can (minus the margins), with respect to it's original ratio. But it you prefer it to be only, let's say 90%, just set the coeff to 0.9. The value should be between 0 and 1. Default is 1.
 
+# Contributing
+
+1. Fork it!  
+2. Create your feature branch: `git checkout -b my-new-feature`  
+3. Code amazing things!  
+4. When you are done, run "gulp" to export the minified version of toFullScreen.js  
+3. Commit your changes: `git commit -am 'Add some feature'`  
+4. Push to the branch: `git push origin my-new-feature`  
+5. Submit a pull request :D
+
 ## Licensing
 
 Copyright © 2016 Francois Versepuy  
