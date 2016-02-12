@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Demo for toFullScreen.js</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* The following styles are necessary for this demo only, not for toFullScreen.js  */
+    body{
+      padding: 10px;
+    }
+    h1 {
+      text-align: center;
+      color: #4bc3cb;
+    }
+    .launcher {
+      display: block;
+      margin: 50px auto;
+    }
+
+    .Overlay {
+      display: none;
+      position: fixed;
+      z-index: 20;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .Overlay_close-button {
+      position: absolute;
+      top: 3px;
+      right: 5px;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      color: #fff;
+      font-size: 30px;
+      cursor: pointer;
+    }
+    .Video-popin_iframe {
+      display: none;
+      position: fixed;
+      z-index: 21;
+    }
+  </style>
+</head>
+<body>
+  <h1>jQuery plugin toFullScreen.js : example 6</h1>
+  <button class="launcher">
+    Play video (original : 560 x 315)
+  </button>
+
+  <!-- Hidden content -->
+  <div class="Overlay">
+    <div class="Overlay_close-button">X</div>
+  </div>
+
+  <iframe class="Video-popin_iframe" width="560" height="315" src="https://www.youtube.com/embed/IyTv_SR2uUo?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="../js/toFullScreen.js"></script>
+  <script>
+    $(function() {
+      var $overlay = $('.Overlay'),
+          $buttonCloseVideo = $('.Overlay_close-button'),
+          $videoIframe = $('.Video-popin_iframe');
+
+      $videoIframe.toFullScreen({
+        minMargin: 30
+      });
+
+      $(".launcher").on('click', function(event) {
+        $overlay.fadeIn("fast");
+        $videoIframe.fadeIn("fast");
+        callPlayer($videoIframe[0], "playVideo");
+      });
+
+      $overlay.add($buttonCloseVideo).on("click", function() {
+        callPlayer($videoIframe[0], "pauseVideo");
+        $overlay.fadeOut("fast");
+        $videoIframe.fadeOut("fast");
+      })
+
+      // send commands to the youtube API
+      function callPlayer(iframe, func, args) {
+        if ( iframe.src.indexOf('youtube.com/embed') !== -1) {
+          iframe.contentWindow.postMessage( JSON.stringify({
+              'event': 'command',
+              'func': func,
+              'args': args || []
+          } ), '*');
+        }
+      }
+    });
+  </script>
+</body>
+</html>

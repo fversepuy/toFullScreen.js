@@ -1,0 +1,13 @@
+{
+  "name": "toFullScreen.js",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Francois Versepuy",
+  "license": "ISC",
+  "main": "index.js",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.2"
+  }
+}
