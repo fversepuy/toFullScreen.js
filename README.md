@@ -12,12 +12,12 @@ Features :
 
 ## Examples :
 
-[Example 1](http://codepen.io/FrancoisV/pen/vLvQYV) : a youtube iframe (original size 560x315, i.e. 16/9 ratio)  
-[Example 2](http://codepen.io/FrancoisV/pen/JGweyZ) : a youtube iframe (original size 420x315, i.e. 4/3 ratio)  
-[Example 3](http://codepen.io/FrancoisV/pen/YwdKZe) : an image (original size 1000x1000)  
-[Example 4](http://codepen.io/FrancoisV/pen/LGMgLy) : an image (original size 300x900). toFullScreen minMargin option set to 100  
-[Example 5](http://codepen.io/FrancoisV/pen/qbLJLP) : an image (original size 1300x200). toFullScreen coeff option set to 0.8  
-[Example 6](http://codepen.io/FrancoisV/pen/OMrazP) : open a video popin (original size 560x315, i.e. 16/9 ratio). toFullScreen minMargin option set to 30
+<a href="http://codepen.io/FrancoisV/pen/vLvQYV" target="_blank">Example 1</a> : a youtube iframe (original size 560x315, i.e. 16/9 ratio)  
+<a href="http://codepen.io/FrancoisV/pen/JGweyZ" target="_blank">Example 2</a> : a youtube iframe (original size 420x315, i.e. 4/3 ratio)  
+<a href="http://codepen.io/FrancoisV/pen/YwdKZe" target="_blank">Example 3</a> : an image (original size 1000x1000)  
+<a href="http://codepen.io/FrancoisV/pen/LGMgLy" target="_blank">Example 4</a> : an image (original size 300x900). toFullScreen minMargin option set to 100  
+<a href="http://codepen.io/FrancoisV/pen/qbLJLP" target="_blank">Example 5</a> : an image (original size 1300x200). toFullScreen coeff option set to 0.8  
+<a href="http://codepen.io/FrancoisV/pen/OMrazP" target="_blank">Example 6</a> : open a video popin (original size 560x315, i.e. 16/9 ratio). toFullScreen minMargin option set to 30
 
 ## Usage :
 
@@ -64,9 +64,9 @@ coeff: 0.9, // by default the element will occupy the max it can (minus the marg
 ## Licensing
 
 Copyright © 2016 Francois Versepuy  
-Follow [Francois Versepuy](https://twitter.com/fanfan92) on Twitter
+Follow <a href="https://twitter.com/fanfan92" target="_blank">Francois Versepuy</a> on Twitter
 
 Special thanks to Ariel Dorol for his opinions and contributions on this.  
-Follow [Ariel Dorol](https://twitter.com/darkylmnx) on Twitter
+Follow <a href="https://twitter.com/darkylmnx" target="_blank">Ariel Dorol</a> on Twitter
 
 Under MIT LICENSE
