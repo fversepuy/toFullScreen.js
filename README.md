@@ -63,7 +63,6 @@ coeff: 0.9, // by default the element will occupy the max it can (minus the marg
 
 # Contributing
 
-1. Fork it!  
 2. Create your feature branch: `git checkout -b my-new-feature`  
 3. Code amazing things!  
 4. When you are done, run "gulp" to export the minified version of toFullScreen.js  
